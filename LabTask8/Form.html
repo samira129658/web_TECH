@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Donation Form</title>
+ 		<script src="Validation.js"></script> 
+	</head>
+	<body>
+		<form onsubmit="return validate();" action="" style="max-width:900px; margin-left:auto; margin-right:auto; background-color:#f5f5f0;">
+			<font color="red">*</font>
+			-Denotes Required Information <br>
+			<b> > 1 Donation &nbsp </b> > 2 Confirmation &nbsp > Thank You!
+				
+			<table width="900px" align="middle">
+				<tr>
+					<td colspan="2" align="margin-left"><font size="4" color="red"> <b>
+					Donor Information 
+					</b></font>
+					</td>
+				</tr>
+					
+				<tr>
+					<td align="right">
+					<b>First Name<font color="red">*</font>:<b>
+					</td>
+
+					<td>
+					<input id ="fname" type="text" name="" size="35">
+					<span id ="sfname" style="color: red;"></span>
+					</td>
+					</tr>
+					<tr>
+						<td align="right">
+							<b>Last Name<font color="red">*</font>:</b>
+						</td>
+
+						<td>
+					<input id = "lname" type="text" name="" size="35">
+					<span id ="slname" style="color: red;"></span>
+					</td>
+					</tr>
+					<tr>
+						<td align="right">
+							<b>Address 1<font color="red">*</font>:</b>
+						</td>
+
+						<td>
+					<input id = "a1" type="text" name="" size="35">
+					<span id ="sa1" style="color: red;"></span>
+					</td>
+					</tr>
+					<tr>
+						<td align="right">
+							<b>Address 2<font color="red">*</font>:</b>
+						</td>
+
+						<td>
+					<input id = "a2" type="text" name=""  size="35">
+					<span id ="sa2" style="color: red;"></span>
+					</td>
+					</tr>
+					<tr>
+						<td align="right">
+							<b>City<font color="red">*</font>:</b>
+						</td>
+
+						<td>
+					<input id = "c1" type="text" name="" size="35">
+					<span id ="sc1" style="color: red;"></span>
+					</td>
+					</tr>
+					<tr>
+						<td align="right">
+							<b>State<font color="red">*</font>:</b>
+						</td>
+
+						<td>
+					<select id = "state">
+						<option value="" selected>Select a state</option>
+						<option value="Alabama">Alabama</option>
+						<option value="California">California</option>
+						<option value="New York">New York</option>
+						<option value="Ohio">Ohio</option>
+						<option value="Virginia">Virginia</option>
+					</select>
+					<span id ="sstate" style="color: red;"></span>
+
+						</td>
+					</tr>
+					<tr>
+						<td align="right">
+							<b>Zip Code<font color="red">*</font>:</b>
+						</td>
+
+						<td>
+					<input id = "zc" type="text" name="" size="35">
+					<span id ="szc" style="color: red;"></span>
+					</td>
+					</tr>
+					<tr>
+						<td align="right">
+							<b>Country<font color="red">*</font>:</b>
+						</td>
+
+						<td>
+					<select id = "country">
+						<option value="" selected>Select a country</option>
+						<option value="America">America</option>
+						<option value="India">India</option>
+						<option value="Bangladesh">Bangladesh</option>
+						<option value="Nepal">Nepal</option>
+						<option value="Bhutan">Bhutan</option>
+					</select>
+					<span id = "scountry" style="color: red;"></span>
+						</td>
+					</tr>
+					</tr>
+					<tr>
+						<td align="right">
+							<b>Phone:</b>
+						</td>
+
+						<td>
+					<input id = "phone" type="text" name="" size="35">
+					<span id = "sphone" style="color: red;"></span>
+					</td>
+					</tr>
+					</tr>
+					<tr>
+						<td align="right">
+							<b>Fax:</b>
+						</td>
+
+						<td>
+					<input id = "fax" type="text" name="" size="35">
+					<span id = "sfax" style="color: red;"></span>
+					</td>
+					</tr>
+					</tr>
+					<tr>
+						<td align="right">
+							<b>Email<font color="red">*</font>:</b>
+						</td>
+
+						<td>
+					<input id = "email" type="" name="" size="35">
+					<span id = "semail" style="color: red;"></span>
+					</td>
+					</tr>
+					<tr>
+						<td rowspan="2" align="right">
+							<b>Donation Amount<font color="red">*</font>:</b><br><sub>(Check a button of or type your amount)</sub>
+						</td>
+
+						<td>
+							<input id = "da" value = "None" type="radio" name="donation"> None 
+							<input id = "da" value = "50" type="radio" name="donation"> $50 
+							<input id = "da" value = "75" type="radio" name="donation"> $75 
+							<input id = "da" value = "100" type="radio" name="donation"> $100 
+							<input id = "da" value = "250" type="radio" name="donation"> $250 
+							<input id = "da" value = "Other" type="radio" name="donation"> Other
+							<span id = "sda" style="color: red;"></span>
+						</td>
+					</tr>
+					<tr>
+					<td align="left">
+							<b>Other Amount $:</b> <input id = "amount" type="text"name="" size="25"> <span id = "samount" style="color: red;"></span>
+						</td>
+					</tr>
+					<tr>
+						<td rowspan="2" align="right">
+							<b>Recurring Donation:</b><br><sub>(Check if yes)</sub>
+						</td>
+						<td size="5">
+						<input type="checkbox"> I am interested in giving on a regualar basis
+						</td>	
+					</tr>
+
+					<tr>
+						<td align="left"><font size="3" >Monthly Credit Card $ </font><input id = "amount2" type="text" size="5"> <span id = "samount2" style="color: red;"></span> For <input id = "months" type="text" size="5"> <span id = "smonths" style="color: red;"></span> Months </td>
+						</td>
+					</tr>
+				
+	          		<tr>
+						<td colspan="2" align="margin-left"> <font size="4" color="red"> <b>
+						Honorarium and Memorial Donation Information
+						</b></font>
+						</td>
+					</tr>
+					<tr>
+						<td rowspan="2" size="3" align="right"><b>I would like to make this<br> donation</b>
+						</td>
+						<td>
+						<input type="radio"> To honor 
+						</td>
+					</tr>
+					<tr>
+						<td>
+						<input type="radio"> In memory of
+						</td>
+					</tr>
+					<tr>
+						<td align="right">
+						<b>  Name: <b>
+						</td>
+						<td>
+					<input id = "name1" type="text" name="" size="35">
+					<span id = "sname1" style="color: red;"></span> 
+					</td>
+					</tr>
+					<tr>
+						<td align="right">
+							<b> Aknowledge Donation to: <b>
+						</td>
+
+						<td>
+					<input id = "adt" type="text" name="" size="35">
+					<span id = "sadt" style="color: red;"></span> 
+					</td>
+					</tr>
+					<tr>
+						<td align="right">
+							<b> Address: <b>
+						</td>
+
+						<td>
+					<input id = "a3" type="text" name="" size="35">
+					<span id = "sa3" style="color: red;"></span> 
+					</td>
+					</tr>
+					<tr>
+						<td align="right">
+							<b> City: <b>
+						</td>
+
+						<td>
+					<input id = "c2" type="text" name="" size="35">
+					<span id = "sc2" style="color: red;"></span> 
+					</td>
+					</tr>
+					<tr>
+						<td align="right">
+							<b>State:</b>
+						</td>
+
+						<td>
+					<select id = "state2">
+						<option value="" selected>Select a state</option>
+						<option value="Alabama">Alabama</option>
+						<option value="California">California</option>
+						<option value="New York">New York</option>
+						<option value="Ohio">Ohio</option>
+						<option value="Virginia">Virginia</option>
+					</select>
+						<span id = "sstate2" style="color: red;"></span> 
+						</td>
+					</tr>
+					
+					<tr>
+						<td align="right">
+							<b> Zip Code: <b>
+						</td>
+
+						<td>
+					<input id = "zc2" type="text" name="" size="35">
+					<span id = "szc2" style="color: red;"></span> 
+					</td>
+					</tr>
+					
+					<tr>
+					<td colspan="2" align="margin-left"> <font size="4" color="red"> <b>
+					 Additional Information 
+					 </b> </font>
+					</td>
+				    </tr>
+				    <tr>
+					<td colspan="2" align="margin-left" size="3"> Please enter your name, company or organization as you would like to appear in our publications: </td>
+					</tr>
+					<tr>
+						<td align="right">
+						<b>Name:<b>
+						</td>
+						<td>
+						<input id = "name2" type="text" name="" size="35">
+						<span id = "sname2" style="color: red;"></span> 
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2" align="margin-left">
+						<input type="checkbox">
+						I would like my gift to remain anonymous 
+					    </td>
+					</tr>
+					<tr> 
+						<td colspan="2" align="margin-left">
+						<input type="checkbox">
+						My employer ofers a matching gift rogram. I will remain the matching gift form 
+					    </td>
+					</tr>
+					<tr> 
+						<td colspan="2" align="margin-left">
+					    <input type="checkbox">
+						Pleas save the cost of acknowledging this gift by not mailing a thank you letter.
+					    </td>
+					</tr>
+					<tr>
+						<td align="right">
+							<b>Comments:</b><br>
+							<sub>(Please type any questions and feedback here)</sub>
+						</td>
+					    <td>	
+						<textarea name="comment" form="usrform" rows="3" cols="27"> </textarea>
+						</td>
+					</tr>
+					<tr>
+						<td style="vertical-align:top" rowspan="4" align="right">
+						<b>How may we contact you?<b>
+						<td align="left">
+						<input type="checkbox"> E-mail 
+						</td>
+					</tr>
+					<tr>
+						<td align="left">
+						<input type="checkbox"> Postal Mail
+					    </td>
+					</tr>
+					</tr>
+					<tr>
+						<td align="left">
+						<input type="checkbox"> Telephone
+					    </td>
+					</tr>
+					</tr>
+					<tr>
+						<td align="left">
+						<input type="checkbox"> Fax	
+					    </td>
+					</tr>
+					<tr>
+						<td colspan="2" align="margin-left">
+						I would like to receive newsletters and information about special events by:
+						</td>
+					<tr>
+						<td></td>
+						<td align="left">
+						<input type="checkbox"> E-mail 
+					    </td>
+					</tr>
+					<tr>
+						<td></td>
+						<td align="left">
+						<input type="checkbox"> Postal Mail
+						</td> 
+					</tr>
+					<tr>
+						<td colspan="2" align="margin-left">
+						<input type="checkbox"> I would like information about volounteering with<br><br>
+						</td>
+					</tr>					
+					<tr>
+						<td align="right">
+						<button type="submit">Submit</button>
+						</td> 
+						<td align="left">
+						<input type="button" value="Reset">
+						</td>
+					</tr>
+		    </table> <br>
+		</form>
+	</body>
+</html>
